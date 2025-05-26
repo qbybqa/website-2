@@ -1,0 +1,149 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    background: #f5f6fa;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+header {
+    background: #223e6c;
+    color: #fff;
+    padding: 24px 0;
+}
+
+header h1 {
+    float: left;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 24px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #ffba08;
+}
+
+.hero {
+    background: linear-gradient(90deg, #223e6c 70%, #ffba08 100%);
+    color: #fff;
+    padding: 80px 0 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+.btn {
+    background: #ffba08;
+    color: #223e6c;
+    padding: 12px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #223e6c;
+}
+
+section {
+    margin: 40px 0;
+}
+
+section h2 {
+    margin-bottom: 18px;
+    color: #223e6c;
+    font-size: 2rem;
+}
+
+.services {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.service {
+    background: #fff;
+    padding: 28px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(34, 62, 108, 0.07);
+    flex: 1;
+    min-width: 240px;
+}
+
+.service h3 {
+    color: #ffba08;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #333;
+}
+
+footer {
+    background: #223e6c;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .container {
+        padding: 12px;
+    }
+    .services {
+        flex-direction: column;
+    }
+    header h1, nav ul {
+        float: none;
+        text-align: center;
+        display: block;
+        margin: 0;
+    }
+    nav ul li {
+        margin: 0 10px;
+        display: inline-block;
+    }
+}
